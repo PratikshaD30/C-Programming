@@ -1,0 +1,84 @@
+#include<stdio.h>
+
+int main()
+{
+
+	char cChar = 'A';                                             //                    Range : [-127 to +127]
+	signed char scChar = 'B';                                   //                      Range : [-127 to +127]
+	unsigned ucChar = 'V';                                    //                        Range : [0 to 255]
+
+
+
+	int iValue = 10;                                               //                   Range : [-32,768 to +32,767]
+	short int isecValue = 1000;                                  //                     Range : [-32,768 to +32,767]  
+	long int lIntValue = 10000;                                //                       Range : [-2,147,483,648 to 2,147,483,647]
+
+
+	float fValue = 1.1;                                             
+	//long float lfValue = 0.0;                                   
+
+	double dValue = 1;
+	long double LdValue = 11.11;
+
+	printf("***Character***\n");
+	printf("Stored Data in cChar is : %c\n",cChar);
+	printf("Address Of cChar is : %u\n",cChar);                       //                a to z : 97 to 122  /  A to Z : 65 to 90; 
+	printf("Storage size for cChar is : %d\n\n", sizeof(cChar));
+	printf("Address of cChar Is : %d\n",&cChar);
+	printf("**************************************\n\n");
+	
+	printf("*** Signed Character***\n");
+	printf("Stored Data In scChar Is : %c\n",scChar);
+	printf("Address of scChar Is : %u\n",scChar);
+	printf("Storage size for scChar : %d\n\n", sizeof(scChar));
+	printf("***************************************\n\n");
+
+	printf("***Unsigned Character***\n");
+	printf("Stored Data in ucChar is : %c\n",ucChar);
+	printf("Address of ucChar Is : %u\n ",ucChar);
+	printf("Storage size for ucChar : %d\n\n",sizeof(ucChar));
+	printf("***********************************************\n\n");
+
+	printf("***Integer***\n");
+	printf("Stored Data In iValue is : %d\n ",iValue);
+	printf("Address Of iValue is : %u\n",iValue);
+	printf("Storage size for iValue Is : %d\n\n",sizeof(iValue));
+	printf("Address of iValue : %d\n",&iValue);
+	printf("***********************************************\n\n");
+
+	printf("***Short Integer***\n");
+	printf("Stored Data in isecValue is : %hu\n", isecValue);
+	printf("Address of isecValue Is : %u\n",isecValue);
+	printf("Storage size for isecValue is : %d\n\n",sizeof(isecValue));
+	printf("Address of isecValue : %d\n",&isecValue);
+	printf("********************************************\n\n");
+
+	printf("***Long Integer***\n");
+	printf("Stored Data in lIntValue Is : %ld\n",lIntValue);
+	printf("Address of lIntValue Is : %u\n",lIntValue);
+	printf("Storage size for lIntValue Is : %d\n\n",sizeof(lIntValue));
+	printf("Address of lIntValue : %d\n",&lIntValue);
+	printf("******************************************************\n\n");
+
+	printf("***Float***\n");
+	printf("Stored Data in fValue Is : %f\n",fValue);
+	printf("Address of fValue is : %u\n",fValue);
+	printf("Storage size for fValue : %d\n\n",sizeof(fValue));
+	printf("********************************************************\n\n");
+
+	printf("***Double***\n");
+	printf("Stored data In dValue is : %lf\n",dValue);
+	printf("Address of dValue is : %u\n",dValue);
+	printf("Storage size for dValue : %d\n\n",sizeof(dValue));
+	printf("********************************************\n\n");
+
+
+	printf("***Long Double***\n");
+	printf("Stored Data in LdValue is : %Lf\n",LdValue);
+	printf("Address of LdValue is : %u\n",LdValue);
+	printf("Storage size of LdValue is : %d\n\n",sizeof(LdValue));
+	printf("********************************************\n\n");
+
+
+return 0;
+}
