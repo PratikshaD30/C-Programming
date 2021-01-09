@@ -9,8 +9,9 @@ int main()
 	printf("%d\n",cLetter);
 }
 
-printf("\n");
+
 printf("*****End Of Program*****");
+printf("\n");
 
 return 0;
 		
