@@ -11,6 +11,7 @@ int main()
 	scanf("%c",&cLetter);
 	
 	Alphabet(cLetter);
+	printf("******End of Program******\n");
 }
 
 char Alphabet(char cAlpha)
